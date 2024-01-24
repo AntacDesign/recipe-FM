@@ -41,7 +41,7 @@ const {img,title,description,pretime,ingredients}= recipe
 		<section>
 			<h2>Preparation time</h2>
 			<ol>
-				{Object.entries(pretime).map(([key,item])=><li><strong>{key}:</strong> {key=='total' ? 'Aproximately '+item :item} minutes</li>)}
+				{Object.entries(pretime).map(([key,item])=><li><strong class="capitalize ">{key}:</strong> {key=='total' ? 'Aproximately '+item :item} minutes</li>)}
 			</ol>
 		</section>
 		<h3>Ingredients</h3>
