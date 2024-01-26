@@ -1,4 +1,9 @@
 ---
+/* import custome fonts */
+import '@fontsource/young-serif';
+// Supports weights 100-900
+import '@fontsource-variable/outfit';
+
 interface Props {
 	title: string;
 }
@@ -16,7 +21,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-orange-100">
 		<slot />
 	</body>
 </html>
@@ -34,8 +39,6 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
 	}
 	code {
 		font-family:
